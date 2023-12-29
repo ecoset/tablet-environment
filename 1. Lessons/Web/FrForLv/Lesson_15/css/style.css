@@ -1,0 +1,221 @@
+/* 
+&display=swap
+&subset=cyrillyc-ext
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap");
+
+/* Stumping styles */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a,
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+img {
+    vertical-align: top;
+}
+html,
+body {
+    height: 100%;
+}
+html {
+    /* default */
+    /* font-size: 16px; */
+}
+body {
+    line-height: 1;
+    color: #4b4b4b;
+    font-family: "Roboto", sans-serif;
+    background-color: #f5f5f5;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+/* ======================================================== */
+/* Container */
+[class*="__container"] {
+    box-sizing: content-box;
+    max-width: 1020px; /* The width of the container */
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/* ======================================================== */
+.sections {
+    flex-grow: 1;
+}
+.sections__promise {
+    margin-bottom: 110px;
+}
+/* ======================================================== */
+
+.titles *:not(:last-child) {
+    margin-bottom: 33px;
+}
+.titles__lebal {
+    background: url("../img/icons/title-icon.svg") 0 -2px no-repeat;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 2.5;
+    color: #5d62b5;
+    text-transform: uppercase;
+    padding-left: 35px;
+}
+.titles__title {
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 1.16;
+    color: #000000;
+}
+/* --- */
+.promise__titles {
+    margin-bottom: 78px;
+}
+/* --- */
+.promise__items {
+    display: flex;
+    /* Moved conten (distance 24px divide by 2) */
+    flex-wrap: wrap;
+    margin: 0 -12px;
+    row-gap: 24px;
+}
+.promise__item {
+    flex: 1 1 33.333%;
+    padding: 0 12px;
+}
+.item-promise {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 23px;
+    min-width: 260px;
+}
+.item-promise__icon {
+    flex: 0 0 63px;
+}
+.item-promise__body {
+    /* padding-left: 23px; */
+}
+.item-promise__body{}
+
+.item-promise__title:not(:last-child) {
+    margin-bottom: 23px;
+}
+
+.item-promise__title {
+}
+
+.item-title {
+    font-size: 19px;
+    font-weight: 900;
+    line-height: 1.36;
+    color: #f2726f;
+}
+
+.item-promise__text {
+}
+.item-text {
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.15px;
+}
+
+/* ======================================================== */
+.services {
+}
+.services__container {
+    display: flex;
+    flex-direction: column;
+}
+.services__titles {
+    margin-bottom: 78px;
+}
+.services__items:not(:last-child) {
+    margin-bottom: 64px;
+}
+.services__items {
+    display: flex;
+    row-gap: 24px;
+    margin: 0 -12px;
+    flex-wrap: wrap;
+
+}
+.services__item {
+    flex: 1 1 33.333%;
+    padding: 0 12px;
+}
+.services__button {
+    align-self: center;
+    background: #f2726f;
+    border-radius: 8px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 2;
+    padding: 12px 25px;
+    /* margin-top: 64px; */
+}
+
+.item-services {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 50px 44px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    min-width: 300px;
+    height: 100%;
+}
+
+.item-services__icon:not(:last-child){
+    margin-bottom: 33px;
+}
+.item-services__icon {
+    flex: 0 0 63px;
+    width: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.item-services__icon img{
+    min-width: 100%;
+    max-height: 63px;
+}
+.item-services__title {
+}
+.item-services__title:not(:last-child) {
+    margin-bottom: 23px;
+}
+.item-services__text:not(:last-child) {
+    margin-bottom: 25px;
+}
+.item-services__text {
+    flex: 1 0 auto;
+}
+/* ======================================================== */

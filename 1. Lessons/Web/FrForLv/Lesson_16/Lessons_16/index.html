@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Lesson 16</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header"></header>
+        <div class="sections">
+
+            <form action="#" method="post" class="main__form form">
+                <div class="form__line">
+                    <label for="username" class="form__label">Введите имя</label>
+                    <input type="text" name="username" id="username" class="form__input">
+                </div>
+                <div class="form__line">
+                    <div class="checkbox">
+                        <input type="checkbox" name="car" id="car" class="checkbox__input">
+                        <label for="car" class="checkbox__label">Автомобиль?</label>
+                    </div>
+
+                </div>
+                <div class="form__line">
+                    <div class="radiobuttons">
+                        <div class="radiobuttons__item">
+                            <input type="radio" name="color" id="color1" class="radiobuttons__input">
+                            <label for="color1" class="radiobuttons__label">Красный</label>
+                        </div>
+
+                        <div class="radiobuttons__item">
+                            <input type="radio" name="color" id="color2" class="radiobuttons__input">
+                            <label for="color2" class="radiobuttons__label">Зелёный</label>
+                        </div>
+
+                        <div class="radiobuttons__item">
+                            <input type="radio" name="color" id="color3" class="radiobuttons__input">
+                            <label for="color3" class="radiobuttons__label">Синий</label>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="form__line">
+                    <div class="checked">
+                        <input type="checkbox" name="checked__input" id="checked__input" class="checked__input">
+                        <label for="checked__input" class="checked__label"></label>
+                    </div>
+                </div>
+                <button class="form__button" type="submit">Отправить</button>
+            </form>
+
+            <!-- атрибут action обязательный атрибуи -->
+            <!-- в атрибуте action находится адрес на которую мы форму бедум отправлять -->
+            <!-- metod - метод передачи данных. 
+                get - значение по умолчанию, данные передаются в адресной строке
+                post - данные передаются скрытно
+            -->
+            <!-- 
+            enctype - что именно мы передаём (текст, файлы )
+                multipart/form-data - для передаячи файлов указываем его
+            -->
+
+            <form action="#" method="get" enctype="">
+                <!-- 
+                    Ввод данных
+                        type - тип ввода данных
+                            number - только числа
+                            text - текст
+                        value - значение поля по умолчанию
+                        name - когда данные отправляются на сервер
+                    они отправляются по этому имени.
+                    На сервер отправится такая пара - username='Сергей'
+                        required - говорит о том что это поле обязатльно для
+                    заполнения. Данные не отпрявятся если поле пустое. Используется
+                    редко, в основном в место него испольнзуется JavaScript
+                        maxlength - ограничитель количества символов
+                        placeholder - показывает строку когда поле пустое
+                        autocomplete - выплывающее окно с ранее введённым текстом
+                    отключить - off
+                    disable - отключить поле
+                -->
+                <input type="text" value="Имя" name="username" required maxlength="10" placeholder="Введите имя"
+                    autocomplete="off">
+
+                <input autocomplete="off" required placeholder="Строка" type="text" name="" id="">
+                <input autocomplete="off" required placeholder="Число" type="number" name="" id="">
+                <!-- Если галочка стоит то на сервер отправятся данные со значением - car=yes -->
+                <input autocomplete="off" required name="car" value="yes" type="checkbox">Есть авто?
+
+                <div>
+                    <input checked autocomplete="off" required name="gender" value="M" type="radio">M
+                    <input autocomplete="off" required name="gender" value="F" type="radio">F
+                </div>
+
+                <!-- Ввод данных - многосточный -->
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+
+                <!-- Выподабщий список -->
+                <select name="form[]" id="form">
+                    <option value="1" selected="selected">Пункт номер 1</option>
+                    <option value="2">Пункт номер 2</option>
+                    <option value="3">Пункт номер 3</option>
+                    <option value="4">Пункт номер 4</option>
+                </select>
+            </form>
+        </div>
+        <footer class="footer"></footer>
+    </div>
+</body>
+
+</html>
