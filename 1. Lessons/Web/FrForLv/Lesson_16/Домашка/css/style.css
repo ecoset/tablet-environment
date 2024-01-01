@@ -50,6 +50,7 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    padding: 20px 0;
 }
 /* ======================================================== */
 /* Container */
@@ -57,6 +58,7 @@ body {
     box-sizing: content-box;
     max-width: 924px; /* The width of the container */
     margin: 0 auto;
+    padding: 0 15px;
 }
 /* ======================================================== */
 .main {
@@ -89,6 +91,7 @@ body {
 .header-form__link {
 }
 .header-form__checkout {
+    margin-bottom: 45px;
 }
 .checkout {
     display: flex;
@@ -99,7 +102,7 @@ body {
     font-weight: 600;
     line-height: normal;
 }
-.checkout__text:not(:last-child){
+.checkout__text:not(:last-child) {
     margin-right: 30px;
 }
 .checkout__button {
@@ -118,11 +121,21 @@ body {
     color: #0156ff;
 }
 .form__title {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #cacdd8;
+    margin-bottom: 25px;
 }
 .form__irems {
 }
 .items-form {
+}
+.items-form__wrapper {
     max-width: 565px;
+    padding-bottom: 20px;
 }
 .items-form__item {
 }
@@ -130,9 +143,7 @@ body {
     display: flex;
     flex-direction: column;
 }
-.item-form:not(:last-child) {
-    margin-bottom: 12px;
-}
+
 .item-form__title {
     font-size: 13px;
     font-style: normal;
@@ -142,31 +153,69 @@ body {
 .item-form__title span {
     color: #c94d3f;
 }
-.item-form__input {
+.item-form__input,
+.item-form__select {
     height: 50px;
     border-radius: 4px;
     border: 1px solid #a2a6b0;
     background: #fff;
+    margin-bottom: 12px;
+    padding: 0 17px;
 }
+.item-form__select {
+    appearance: none;
+    background: url("../image/form/select/arrow.svg") no-repeat 97.5% / 5px 5px;
+}
+
 .item-form__footer {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #cacdd8;
+    margin-bottom: 21px;
+    color: #666;
 }
 .item-form__select {
 }
 .item-form__radio {
 }
 .radio-form {
+    border-top: 1px solid #cacdd8;
+    padding-top: 8px;
 }
 .radio-form__items {
 }
 .radio-form__item {
+    margin-bottom: 8px;
 }
 .radio-form__title {
 }
 .radio-form__body {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
 }
 .radio-form__text {
+    flex: 1 0 auto;
 }
 .radio-form__value {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
 }
 .items-form__submit {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 50px;
+    border: 2px solid #0156ff;
+    display: inline-flex;
+    min-height: 50px;
+    min-width: 208px;
+    padding: 0 15px;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background-color: #0156ff;
+    margin-top: 41px;
 }
