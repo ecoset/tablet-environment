@@ -56,10 +56,26 @@
 .top-header__instagram {
 }
 .top-header__visit {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    column-gap: 5px;
 }
-.top-header__visit a {
+.top-header__contact-us{
     color: #fff;
-    border-bottom: 2px solid #fff;
+    position: relative;
+    padding: 0 1px;
+    
+}
+.top-header__contact-us::before{
+    content: " ";
+    background-color: #fff;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    border-radius: 1px;
 }
 .header__bottom {
 }
