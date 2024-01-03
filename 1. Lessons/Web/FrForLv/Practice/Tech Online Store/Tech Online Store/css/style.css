@@ -1,0 +1,69 @@
+@import "./reset.css";
+
+.header {
+}
+.header__top {
+}
+.top-header {
+    background-color: #020202;
+    color: #acacac;
+    padding: 14px 0;
+}
+.top-header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 600;
+}
+.top-header__switch-data {
+}
+
+.data-switch {
+    position: relative;
+    /* padding-right: 10px; */
+}
+.data-switch::before {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background: url("/images/selects/arrow.svg") 0 0 no-repeat;
+    position: absolute;
+    transform: translate(100%, 0);
+    top: 30%;
+    z-index: 5;
+}
+.data-switch__selects {
+    color: #fff;
+    background-color: #020202;
+    appearance: none;
+    padding: 0 10px 0 7px;
+}
+.data-switch__select {
+}
+.top-header__contacts {
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+    color: #fff;
+}
+.top-header__number {
+}
+.top-header__social {
+}
+.top-header__facebook {
+}
+.top-header__instagram {
+}
+.top-header__visit {
+}
+.top-header__visit a {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+.header__bottom {
+}
+.bottom-header {
+}
+.bottom-header__container {
+}

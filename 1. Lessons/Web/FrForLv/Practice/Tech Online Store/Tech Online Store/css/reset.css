@@ -1,0 +1,66 @@
+/* Stumping styles */
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+/* ======================================================== */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+img {
+    vertical-align: top;
+}
+html,
+body {
+    height: 100%;
+}
+html {
+    /* default */
+    font-size: 13px;
+}
+body {
+    line-height: 1;
+    color: #000;
+    font-family: "Poppins";
+    background-color: #ffffff;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+/* ======================================================== */
+/* Container */
+[class*="__container"] {
+    box-sizing: content-box;
+    max-width: 1398px; /* The width of the container */
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/* ======================================================== */
+.main {
+    flex-grow: 1;
+}
