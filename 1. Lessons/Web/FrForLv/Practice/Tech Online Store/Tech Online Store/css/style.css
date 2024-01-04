@@ -103,7 +103,7 @@
     column-gap: 25px;
     align-items: center;
 }
-@media (max-width:1250px) {
+@media (max-width: 1250px) {
     .nav__list {
         display: flex;
         column-gap: 20px;
@@ -169,3 +169,37 @@
 }
 .bottom-header__user {
 }
+/* ======================================================== */
+
+.slider {
+}
+.slider__container {
+}
+.slider__body {
+}
+.slider__items {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.slider__items::before, .slider__items::after{
+    content: "";
+    background: url("/images/slider/arrow-slider.png") 0 0 no-repeat;
+    width: 46px;
+    height: 79px;
+    position: absolute;
+}
+.slider__items::after {
+    transform: rotate(180deg);
+    right: 0;
+}
+.slider__item {
+}
+.slider__link {
+    display: inline-block;
+    width: 100%;
+}
+.slider__images {
+    width: 100%;
+}
+
