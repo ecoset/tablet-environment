@@ -1,0 +1,26 @@
+@import url("/css/reset.css");
+.block {
+}
+.block__container {
+}
+.block__items {
+    display: flex;
+    flex-wrap: wrap;
+}
+.block__item {
+    flex: 0 1 33.333%;
+}
+.item-block {
+    display: flex;
+    flex-direction: column;
+}
+.item-block__image {
+}
+.item-block__body {
+}
+.item-block__title {
+}
+.item-block__text {
+}
+.item-block__button {
+}

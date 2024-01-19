@@ -1,0 +1,79 @@
+/* Stumping styles */
+*,
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        box-sizing: border-box;
+    }
+    li {
+        list-style: none;
+    }
+    a,
+    a:visited {
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: inherit;
+        font-size: inherit;
+    }
+    img {
+        vertical-align: top;
+    }
+    html,
+    body {
+        height: 100%;
+    }
+    html {
+        /* default */
+        /* font-size: 16px; */
+    }
+    body {
+        line-height: 1;
+        color: #ffffff;
+        font-family: "Roboto";
+        background-color: #343334;
+    }
+    .wrapper {
+        min-height: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    /* ======================================================== */
+    /* Container */
+    [class*="__container"] {
+        box-sizing: content-box;
+        max-width: 1050px; /* The width of the container */
+        margin: 0 auto;
+    }
+    /* ======================================================== */
+    .main {
+        flex-grow: 1;
+    }
+    /* ======================================================== */
+    
+    .block {
+    }
+    .block__container {
+
+    }
+    .block__items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .block__item {
+        min-width: 200px;
+        flex: 1 1 33.333%;
+        background-color: #008f0c;
+        border: 2px solid #000000;
+    }
