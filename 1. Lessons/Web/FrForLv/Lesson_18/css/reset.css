@@ -79,13 +79,13 @@ body {
 }
 
 [class*="__container"] {
-    max-width: 1140px;
+    max-width: 1050px;
     margin: 0px auto;
     padding: 0px 15px;
 }
 
 /* №1 */
-@media (max-width: 1140px) {
+@media (max-width: 1050px) {
     [class*="__container"] {
         /* max-width: 970px;  */
     }
